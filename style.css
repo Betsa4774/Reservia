@@ -1,4 +1,222 @@
-*{
-    margin: 0;
-    padding: 0;
+
+/*header*/
+nav {
+font-family: raleway;
+font-size: 9px; 
+display: flex;
+justify-content: space-between;
 }
+a {
+  color: black;
+ }
+a:hover {
+  color: #0065fc;
+  text-decoration-line: overline;
+   }
+
+  h1 {
+    font-size: 14px;
+    font-family: raleway;
+  }
+  h2 {
+    font-size: 10px;
+    font-family: raleway;
+  }
+ 
+  p {
+    font-size: 9px;
+    font-family: raleway;
+  }
+
+ /*icon et bouton*/
+ .recherche {
+  background-color: #0065fc;
+   color: white;
+   border-radius: 10px;
+ }
+
+  img {
+    width: 120px;
+    height: 80px;
+      }
+
+/*block hebergements*/
+/*icon*/
+.fas {
+  color: #0065fc;
+    }
+
+.bloc1 {
+  background-color: grey;
+  column-count: 3;
+  width: 50%;
+  height:160%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-top: 20px;
+}
+.img
+{
+  text-align: center;
+}
+
+.container1 { 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  }
+
+.container2
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  margin-top: 10px;
+    
+ }
+.container3
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  margin-top: 45px;
+  margin-bottom: 14px;
+  }
+.container4
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.container5
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  
+}
+.container6
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  
+ 
+}
+
+/* Section Les plus populaires*/
+aside 
+ {
+  flex-direction: row;
+width: 200px;
+height: 500px;
+background-color: #DEEBFF;
+padding: 9px;
+}
+
+.container7
+{ 
+  background-color: white;
+  width: auto;
+  border: solid white;
+  border-radius: 8%;
+}
+.container8
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+}
+.container9
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+}
+
+/*Activités*/
+.bloc3 {
+background-color: #DEEBFF;
+column-count: 3;
+width: 50%;
+/*width: 50%;
+
+  height:auto%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 20px;*/
+}
+.container10
+{ 
+  background-color: white;
+  border-radius: 10%;
+  width: 91%;
+  height:  %;
+  padding: 0px 0px 10px 0px; 
+  }
+.container11
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  width: 91%;
+  padding: 0px 0px 10px 0px;
+}
+.container12
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  width: 91%;
+  padding: 0px 0px 10px 0px;
+  margin: 15px 0px 15px 0px;
+}
+.container13
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  width: 91%;
+  padding: 0px 0px 10px 0px;
+  margin: 30px 0px 15px 0px;
+   }
+.container14
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  width: 91%;
+  padding: 0px 0px 10px 0px;
+  }
+.container15
+{ 
+  background-color: white;
+  border: solid white;
+  border-radius: 8%;
+  width: 10%;
+  padding: 0px 12px 0px;
+}
+
+/* Last Section*/
+      footer 
+    {
+     display: flex;
+     justify-content: space-around;
+     background-color: grey;
+     width: 90%; 
+     padding-top: 20px;
+     padding-bottom: 10px;
+     padding-right: 20px;
+     padding-left: 50px;
+          }
+    
+    footer h1 {
+       font-size: 14px;
+        }
+    ul {
+      list-style-type: none;
+      font-size: 10px;
+     
+    }   
