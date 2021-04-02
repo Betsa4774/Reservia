@@ -1,11 +1,36 @@
+/*medias-querys
+@media only screen and (min-width: 768px) {/*tablettes et ordinateurs
+  media only screen and (max-width: 767px} {smartphone}
+  media only screen and (max-width: 767px and (orientation portrait) smartphone on mode portrait*/
 
+*/
 /*header*/
-nav {
+#head {
+  display: flex;
+  justify-content: space-between;
+  }
+ .nomlogo {
+   flex: 1;
+   margin-left: 5px;
+   width: 110px;
+   height: 80px;
+ }
+#navigation {
 font-family: raleway;
 font-size: 9px; 
 display: flex;
 justify-content: space-between;
+align-items: center;
+width: 67vw;
 }
+.link1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 5vw;
+width: 15em;
+}
+/*ligne au survol et color barre*/
 a {
   color: black;
  }
@@ -13,6 +38,17 @@ a:hover {
   color: #0065fc;
   text-decoration-line: overline;
    }
+  .inscription {
+     color: #0065fc;
+     margin-right: 5vw;
+   }
+
+   /* voir s'il faut mettre des marges à certains éléments*/
+   /* Présentation*/
+   .message_bienvenue{
+     font-size: 12px;
+   }
+  
 
   h1 {
     font-size: 14px;
@@ -28,12 +64,159 @@ a:hover {
     font-family: raleway;
   }
 
- /*icon et bouton*/
+  /*Barre de recherche*/
+ 
+  /*icone*/
+ .fa-map-marker-alt {
+   background-color: #f2f2f2;
+   padding: 8px;
+   border-radius: 20px 0px 0px 20px;
+   border: 2px solid color #f2f2f2;
+   font-size: 8px;
+   }
+
+ /*form*/
+ .search{
+   display: flex;
+   flex-direction: row;
+   justify-content: stretch;
+   width: 450px;
+   height: 35px;
+   align-items:center;
+ }
+ /*text*/
+ .text {
+  border-collapse: collapse;
+  padding: 1px;
+  border: solid 1px color #f2f2f2;  
+ }
+
+/*bouton*/
  .recherche {
   background-color: #0065fc;
-   color: white;
-   border-radius: 10px;
- }
+  color: white;
+  padding: 3px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 10px;
+   }
+ 
+/*filtres*/
+#option {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  /*width: 1100px;
+  height: 50px;
+  margin: 10px 0px;*/
+}
+.filtres {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  font-size: 12px;
+  margin-right: 10px;
+  }
+  p:hover{
+    background-color: #DEEBFF;
+      }
+  .fa-money-bill-wave-alt {
+  color: #0065fc;
+  font-size: 10px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 10px;
+   }
+  .economique {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    padding: 1px;
+    margin: 10px;
+  }
+  .text {
+    padding: 5px 50 5px 50px;
+  }
+  .fa-child{
+    color: #0065fc;
+    font-size: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  .familial {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      font-size: 10px;
+      border-radius: 20px 20px 20px 20px;
+      border-style: solid;
+      border-color: #f2f2f2;
+      padding: 1px;
+      margin: 10px;
+    }
+  .fa-heart {
+  color: #0065fc;
+  font-size: 10px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 10px;
+  }
+  .romantique {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    padding: 1px;
+    margin: 10px;
+  }
+ .fa-dog {
+      color: #0065fc;
+      font-size: 10px;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      padding: 8px;
+      margin-right: 10px;
+        }
+  .animaux {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    padding-right: 1px;
+    margin: 10px;
+  }
+
+  #information {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .fa-exclamation-circle {
+    color: #0065fc;
+    font-size: 9px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    padding: 4px;
+    }
 
   img {
     width: 120px;
@@ -42,19 +225,37 @@ a:hover {
 
 /*block hebergements*/
 /*icon*/
-.fas {
-  color: #0065fc;
-    }
+
+#ensemble {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-left: 50px;
+margin-right: 70px;
+}
+
+#hotels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 
 .bloc1 {
   background-color: grey;
   column-count: 3;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px;
   width: 50%;
-  height:160%;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  margin-top: 20px;
+  height: 75%;
+
 }
+.bloc1 h1 {
+  padding-left: 5px;
+}
+
 .img
 {
   text-align: center;
@@ -64,6 +265,8 @@ a:hover {
   background-color: white;
   border: solid white;
   border-radius: 8%;
+  margin-left: 5px;
+  width: 120px;
   }
 
 .container2
@@ -72,6 +275,9 @@ a:hover {
   border: solid white;
   border-radius: 8%;
   margin-top: 10px;
+  margin-left: 5px;
+  
+  width: 120px;
     
  }
 .container3
@@ -79,7 +285,7 @@ a:hover {
   background-color: white;
   border: solid white;
   border-radius: 8%;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 14px;
   }
 .container4
@@ -89,12 +295,16 @@ a:hover {
   border-radius: 8%;
   margin-top: 14px;
   margin-bottom: 14px;
+  width: 120px
 }
 .container5
 { 
   background-color: white;
   border: solid white;
   border-radius: 8%;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  margin-left: 5px;
   
 }
 .container6
@@ -112,111 +322,195 @@ aside
   flex-direction: row;
 width: 200px;
 height: 500px;
-background-color: #DEEBFF;
+background-color: grey;
 padding: 9px;
 }
+/*.image-taille {
+  width: 60px;
+  height: 60px;
+}*/
 
 .container7
 { 
   background-color: white;
-  width: auto;
+  width: 150px ;
+  height: 90px;
   border: solid white;
   border-radius: 8%;
+  margin-top: 30px;
+  float: left;
 }
 .container8
 { 
   background-color: white;
   border: solid white;
   border-radius: 8%;
+  width: 150px ;
+  height: 90px;
+  margin-top: 30px;
+  float: left;
 }
 .container9
 { 
   background-color: white;
   border: solid white;
   border-radius: 8%;
-}
-
-/*Activités*/
-.bloc3 {
-background-color: #DEEBFF;
-column-count: 3;
-width: 50%;
-/*width: 50%;
-
-  height:auto%;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  margin-top: 20px;*/
-}
-.container10
-{ 
-  background-color: white;
-  border-radius: 10%;
-  width: 91%;
-  height:  %;
-  padding: 0px 0px 10px 0px; 
+  width: 150px ;
+  height: 90px;
+  margin-top: 50px;
+  margin-left: 0px;
+  float: left;
   }
+/*
+/*Activités*/
+#activités {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+}
+/*Titre*/
+.titre_activités {
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+  padding-top: 10px;
+}
+/*configuration des photos-activités*/
+.photo1 {
+  object-fit: cover;
+  width: 11vw;
+  height: 14vw;
+  margin: auto;
+}
+.photo2  {
+  object-fit: cover;
+  width: 11vw;
+  height: 7vw;
+}
+.photo3 {
+  object-fit: cover;
+  width: 11vw;
+  height: 14vw;
+}
+.photo4 {
+  object-fit: cover;
+  width: 11vw;
+  height: 4vw;
+  margin: auto;
+}
+.photo5 {
+  object-fit: cover;
+  width: 11vw;
+  height: 6vw;
+}
+.photo6 {
+  object-fit: cover;
+  width: 11vw;
+  height: 5vw;
+}
+
+/*legendes*/
+.legende1 {
+  margin-left: 10px ;
+  max-width: 100%;
+  max-height: 90%;
+  }
+  .legende2 {
+    margin-left: 10px ;
+    max-width: 100%;
+    max-height: 90%;
+    }
+    .legende3 {
+      margin-left: 10px ;
+      max-width: 100%;
+      max-height: 90%;
+      }
+      .legende4 {
+        margin-left: 10px ;
+        max-width: 100%;
+        max-height: 90%;
+        }
+        .legende5 {
+          margin-left: 10px ;
+          max-width: 100%;
+          max-height: 90%;
+          }
+          .legende6 {
+            margin-left: 10px ;
+            max-width: 100%;
+            max-height: 90%;
+            }
+   
 .container11
 { 
-  background-color: white;
-  border: solid white;
-  border-radius: 8%;
-  width: 91%;
-  padding: 0px 0px 10px 0px;
+ display: flex;
+ flex-direction: column;
+ justify-content: stretch;
 }
+ 
 .container12
 { 
-  background-color: white;
-  border: solid white;
-  border-radius: 8%;
-  width: 91%;
-  padding: 0px 0px 10px 0px;
-  margin: 15px 0px 15px 0px;
-}
-.container13
-{ 
-  background-color: white;
-  border: solid white;
-  border-radius: 8%;
-  width: 91%;
-  padding: 0px 0px 10px 0px;
-  margin: 30px 0px 15px 0px;
-   }
-.container14
-{ 
-  background-color: white;
-  border: solid white;
-  border-radius: 8%;
-  width: 91%;
-  padding: 0px 0px 10px 0px;
-  }
-.container15
-{ 
-  background-color: white;
-  border: solid white;
-  border-radius: 8%;
-  width: 10%;
-  padding: 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+ justify-content: stretch;
 }
 
+
+
 /* Last Section*/
-      footer 
-    {
+/*Disposition de la Section Legal*/
+#information_legal {
      display: flex;
-     justify-content: space-around;
+     flex-direction: row;
+     justify-content: start;
+     align-content: space-between;
      background-color: grey;
-     width: 90%; 
-     padding-top: 20px;
-     padding-bottom: 10px;
-     padding-right: 20px;
-     padding-left: 50px;
-          }
+     width: 70em;
+     margin-top: 5px;
+     height: 10em;      
+      }
+
+   /*Disposition des titres et bloques*/
+   #a_propos #hébergements #assistance {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-content: space-around;
+    }
     
-    footer h1 {
-       font-size: 14px;
-        }
-    ul {
+    #list_one {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: space-around;
+      width: 100%;
+      height: 40%;
+       }
+
+       #list_two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 100%;
+        height: 40%;
+         }
+         #list_three {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-content: space-around;
+          width: 100%;
+          height: 40%;
+         } 
+   ul {
       list-style-type: none;
       font-size: 10px;
      
     }   
+    .name {
+      padding-top: 10px;
+      padding-left: 40px;
+      padding-right: 200px;
+    }
