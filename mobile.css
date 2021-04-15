@@ -1,0 +1,255 @@
+/* medias-querys
+
+@media only screen and (max-width: 767px} {smartphone}*/
+@media all and (max-width: 767px) {
+  .bloc_page {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 20%;
+    margin-left: 5px;
+  }
+  .inscription {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    font-size: 1em;
+  }
+  .navigation li {
+    width: 70%;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  .link_heberg {
+    border-bottom: 2px solid #0065fc;
+    width: 50%;
+  }
+  .link_acti {
+    border-bottom: 2px solid #f2f2f2;
+    width: 50%;
+  }
+  nav a:hover {
+    border-top: 0 solid #0065fc;
+    padding-top: 0;
+  }
+  h1 {
+    /*Première Phrase*/
+    width: 100%;
+    font-size: 1.3em;
+  }
+  #recherche h2 {
+    /*Deuxième phrase*/
+    font-size: 0.7em;
+  }
+  #form {
+    display: none;
+  }
+  #loupe .search {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 65%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    margin-left: 5px;
+  }
+
+  #loupe .submit {
+    background-color: #0065fc;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    width: 12%;
+    font-size: 0.7em;
+    color: white;
+    border: 1px solid #f2f2f2;
+    padding: 3.5px;
+  }
+
+  .option {
+    display: flex;
+  }
+  .option p:hover {
+    background-color: inherit;
+  }
+
+  .choix {
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .filtres {
+    font-size: 0.8em;
+    margin-left: 5px;
+    width: 5%;
+  }
+  .econo,
+  .fami,
+  .roman,
+  .animaux {
+    background-color: seagreen;
+    width: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #information h2 {
+    font-size: 0.7em;
+    margin-left: 5px;
+  }
+  #ensemble {
+    /*Hôtels*/
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .titre_populaires {
+    font-size: 1em;
+  }
+  #bloc2 {
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .cartes_aside {
+    height: 26vw;
+    width: 90%;
+  }
+  .picture_aside {
+    height: 25.5vw;
+    width: 28vw;
+  }
+  .legende_aside {
+    background-color: white;
+    height: 26vw;
+    width: 67%;
+  }
+  .legende_aside h4 {
+    font-size: 0.9em;
+  }
+  .legende_aside p {
+    font-size: 0.8em;
+    line-height: 0.5em;
+  }
+  .legende_aside .fa-star {
+    font-size: 0.8em;
+    line-height: 6em;
+  }
+  #hotels {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    order: 1;
+    width: 91%;
+  }
+  #hotels h3 {
+    width: 100%;
+    font-size: 1em;
+  }
+  .rang1 {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cartes {
+    margin-bottom: 15px;
+    width: 94%;
+    height: 12%;
+  }
+  .cartes img {
+    width: 83vw;
+    height: 20vw;
+  }
+  .legende h4 {
+    font-size: 0.9em;
+  }
+  .legende p {
+    font-size: 0.7em;
+  }
+  .fa-star {
+    font-size: 0.8em;
+  }
+  .afficher {
+    width: 90%;
+    font-size: 0.7em;
+  }
+  #activities {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .titre_activities {
+    font-size: 1em;
+    margin-left: 11px;
+    width: 90%;
+  }
+  .carte_alone {
+    width: 93%;
+    margin-bottom: 15px;
+  }
+  .carte_alone img {
+    width: 90vw;
+    height: 21vw;
+  }
+  .column_activities img {
+    width: 88.5vw;
+    height: 21vw;
+  }
+  .carte_activities,
+  .carte_activities1 {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  /*Effets annulés*/
+  .carte_alone,
+  .carte_activities,
+  .carte_activities1 {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .carte_alone:hover,
+  .carte_activities:hover,
+  .carte_activities1:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+  /*Footer*/
+  #information_legal {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: #f2f2f2;
+    width: 100%;
+    margin-top: 5px;
+  }
+  #a_propos,
+  #hebergements,
+  #assistance {
+    width: 100%;
+  }
+  .name {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}

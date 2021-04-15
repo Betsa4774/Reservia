@@ -2,92 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+     <link rel="stylesheet" href="mobile.css"/>
+<link rel="stylesheet" href="tablette.css"/>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/b6d2dc537c.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
+      crossorigin="anonymous"></script>
+   
     <title>Reservia</title>
   </head>
 
   <body class="bloc_page">
     <!--En tête de page-->
-    <header>
-      <!--logo-->
-      <!--Menu de navigation-->
+    <header> <!--logo et Menu de navigation-->
+      
       <div class="logo">
         <img src="images/Reservia.svg" alt="logo" />
       </div>
-      <nav>
-        <ul>
-          <li><a href="# Hebergements">Hebergements</a></li>
-          <li><a href="# Activities">Activités</a></li>
-        </ul>
-      </nav>
-      <a class="inscription" href="#S'inscrire">S'inscrire</a>
+        <nav class="navigation">
+         <ul>
+           <li class="link_heberg">
+            <a href="#hebergements">Hebergements</a>
+           </li>
+           <li class="link_acti">
+             <a href="#activities">Activités</a>
+           </li>
+          </ul>
+        </nav>
+           <a class="inscription" href="#S'inscrire">S'inscrire</a>
     </header>
-    <!--Présentation-->
-
+   
     <!--nom des lieux -->
     <section>
-      <div id="recherche">
-        <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
-        <h2>En plein centre ville ou en plein nature</h2>
-
-        <form class="search" action="recherche">
-          <i class="fas fa-map-marker-alt"></i>
-          <input
-            class="text"
-            type="recherche"
-            name="Rechercher"
-            id="rechercher"
-            placeholder="Marseille, France"
-          />
-          <input class="recherche" type="button" value="Rechercher" />
-        </form>
-      </div>
-
+     <div id="recherche">
+        <h1>Trouvez votre hebergement pour des vacances de rêve</h1>  <!--Paragraphe de bienvenue-->
+        <h2>En plein centre ville ou en plein nature</h2>    <!--ligne: ville ou nature-->
+         
+        <div id="form">   
+          <form class="search" action="#">
+           <span><i class="fas fa-map-marker-alt"></i></span>
+           <input class="text" type="recherche" name="Rechercher" placeholder="Marseille, France"/>
+            <input class="submit" type="submit" name="Rechercher" value="Rechercher"/>
+         </form>
+        </div>
+      
+       <div id="loupe">
+         <form class="search" action="#">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <input class="recherche" type="search" name="search" placeholder="Marseille, France">
+            <button class="submit" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+       </div>
+     </div>
+   
       <!--filtres-->
-      <div id="option">
-        <h4 class="filtres">Filtres</h4>
-
-        <div class="econo">
+     <div class="option">
+         <h4 class="filtres">Filtres</h4>
+       <div class="choix">
+         <div class="econo">
           <i class="fas fa-money-bill-wave-alt"></i>
-          <p><b>Economique</b></p>
+          <a href>
+           <p><b>Economique</b></p>
+        </a>
         </div>
 
         <div class="fami">
           <i class="fas fa-child"></i>
-          <p><b>Familial</b></p>
+          <a href>
+           <p><b>Familial</b></p>
+        </a>
         </div>
 
         <div class="roman">
           <i class="fas fa-heart"></i>
-          <p><b>Romantique</b></p>
+          <a href>
+           <p><b>Romantique</b></p>
+        </a>
         </div>
 
         <div class="animaux">
           <i class="fas fa-dog"></i>
-          <p><b>Animaux autorisés</b></p>
+          <a href>
+           <p><b>Animaux autorisés</b></p>
+          </a>
         </div>
-      </div>
-
+       </div>
+     </div>
+      
       <!--Information additional-->
 
       <div id="information">
-        <i class="fas fa-exclamation-circle"></i>
-        <h2>Plus de 500 logements sont disponibles dans cettte ville</h2>
+       <h2><i class="fas fa-exclamation-circle"></i>
+        Plus de 500 logements sont disponibles dans cettte ville</h2>
       </div>
     </section>
 
@@ -98,6 +109,7 @@
         <h3>Héberbegements à Marseille</h3>
         <div class="rang1">
           <div class="cartes">
+            <a href>
             <img
               src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
               alt="Camarote"
@@ -110,10 +122,12 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <span><i class="fas fa-star"></i></span>
+            </a>
             </div>
           </div>
 
           <div class="cartes">
+             <a href>
             <img
               src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
               alt="lumiere"
@@ -126,10 +140,12 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
+             </a>
             </div>
           </div>
 
           <div class="cartes">
+            <a href>
             <img
               src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg"
               alt="coussinjaune"
@@ -143,12 +159,14 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <span><i class="fas fa-star"></i></span>
+            </a>
             </div>
           </div>
         </div>
 
         <div class="rang1">
           <div class="cartes">
+            <a href>
             <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mar" />
 
             <div class="legende">
@@ -160,10 +178,12 @@
               <span
                 ><i class="fas fa-star"></i> <i class="fas fa-star"></i
               ></span>
+            </a>
             </div>
           </div>
 
           <div class="cartes">
+            <a href>
             <img
               src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
               alt="camarotesantiguos"
@@ -176,10 +196,12 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <span><i class="fas fa-star"></i></span>
+            </a>
             </div>
           </div>
 
           <div class="cartes">
+            <a href>
             <img
               src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
               alt="twin"
@@ -192,10 +214,10 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
+            </a>
             </div>
           </div>
         </div>
-
         <h4 class="afficher">Afficher plus</h4>
       </section>
 
@@ -218,13 +240,14 @@
               alt="murvert"
             />
             <div class="legende_aside">
-              <h4>Hôtel Le soleil du matin</h4>
+              <h4>Hôtel Le soleil du</h4>
+              <h4>matin</h4>
               <p>Nuit à partir de <strong>128 €</strong></p>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <span><i class="fas fa-star"></i></span>
+              <i class="fas fa-star"></i>
             </a>
             </div>
           </div>
@@ -237,7 +260,8 @@
               alt="grandeporte"
             />
             <div class="legende_aside">
-              <h4>Le coeur de l'eau <br />Chambre d'hôtes</h4>
+              <h4>Le coeur de l'eau</h4>
+              <h4>Chambre d'hôtes</h4>
               <p>Nuit à partir de <strong>75 €</strong></p>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -256,7 +280,8 @@
               alt="queenbed"
             />
             <div class="legende_aside">
-              <h4>Hôtel Tout Bleu et blanc</h4>
+              <h4>Hôtel Tout Bleu et</h4>
+              <h4>blanc</h4>
               <p>Nuit à partir de <strong>68 €</strong></p>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -276,65 +301,61 @@
 
       <div id="activities">
         <div class="carte_alone">
-          <img
-            src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-            alt="port"
-          />
-          <div class="legende_activities">
-            <h4>Vieux Port</h4>
-          </div>
+          <a href>
+            <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="port"/>
+           <div class="legende_activities">
+             <h4>Vieux Port</h4>
+           </div>
+          </a>
         </div>
 
         <div class="column_activities">
           <div class="carte_activities1">
-            <img
-              src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt="fort"
-            />
-            <div class="legende_activities">
-              <h4>Fort des Pommegues</h4>
-            </div>
+            <a href>
+             <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort"/>
+             <div class="legende_activities">
+               <h4>Fort des Pommegues</h4>
+             </div>
+            </a>
           </div>
 
           <div class="carte_activities">
-            <img
-              src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-              alt="iles"
-            />
-            <div class="legende_activities">
-              <h4>Ilês de Frioul</h4>
-            </div>
-          </div>
+            <a href>
+              <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"alt="iles"/>
+             <div class="legende_activities">
+               <h4>Ilês de Frioul</h4>
+             </div>
+           </a>
+          </div> 
         </div>
+
         <div class="carte_alone">
-          <img
-            src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-            alt="parc"
-          />
-          <div class="legende_activities">
-            <h4>Parc des Calanques</h4>
-          </div>
+          <a href>
+             <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc" />
+           <div class="legende_activities">
+             <h4>Parc des Calanques</h4>
+           </div>
+          </a>
         </div>
 
         <div class="column_activities">
           <div class="carte_activities1">
-            <img
-              src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="eglise"
-            />
+             <a href>
+            <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="eglise"/>
             <div class="legende_activities">
               <h4>Nôtre Dame de la Garde</h4>
             </div>
-          </div>
+            </a>
+         </div>
 
           <div class="carte_activities">
+            <a href>
             <img
-              src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              alt="Longchamp"
-            />
+              src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp"/>
             <div class="legende_activities">
               <h4>Parc Longchamp</h4>
             </div>
+            </a>
           </div>
         </div>
       </div>
@@ -343,28 +364,19 @@
     <!--Last section-->
     <footer>
       <div id="information_legal">
+
         <div id="a_propos">
           <h3 class="name">A propos</h3>
           <div id="list_one">
             <ul>
-              <li>
-                <a href="#Fonctionnement du site"> Fonctionnement du site</a>
-              </li>
-              <li>
-                <a href="#Conditions générales de vente"
-                  >Conditions générales de vente</a
-                >
-              </li>
-              <li>
-                <a href="Données et confidentialité"
-                  >Données et confidencialité</a
-                >
-              </li>
+              <li><a href="#Fonctionnement du site"> Fonctionnement du site</a></li>
+              <li><a href="#Conditions générales de vente">Conditions générales de vente</a></li>
+              <li><a href="Données et confidentialité">Données et confidencialité</a></li>
             </ul>
           </div>
         </div>
 
-        <div id="hébergements">
+        <div id="hebergements">
           <h3 class="name">Nos hebergements</h3>
           <div id="list_two">
             <ul>
