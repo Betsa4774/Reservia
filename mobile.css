@@ -1,9 +1,11 @@
 /* medias-querys
-
-@media only screen and (max-width: 767px} {smartphone}*/
+ {smartphone}*/
 @media all and (max-width: 767px) {
   .bloc_page {
     width: 100%;
+  }
+  main {
+    padding: 18px;
   }
   header {
     width: 100%;
@@ -13,7 +15,6 @@
   }
   .logo {
     width: 20%;
-    margin-left: 5px;
   }
   .inscription {
     width: 90%;
@@ -22,6 +23,11 @@
     position: absolute;
     top: 20px;
     font-size: 1em;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
   }
   .navigation li {
     width: 70%;
@@ -43,29 +49,28 @@
     padding-top: 0;
   }
   h1 {
-    /*Première Phrase*/
     width: 100%;
     font-size: 1.3em;
   }
   #recherche h2 {
-    /*Deuxième phrase*/
     font-size: 0.7em;
   }
-  #form {
+  #rechercher {
+    display: inline;
+  }
+  #loupe-input {
     display: none;
   }
   #loupe .search {
-    background-color: blue;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-    width: 65%;
+    width: 100%;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 17px;
     margin-left: 5px;
   }
-
   #loupe .submit {
     background-color: #0065fc;
     border-radius: 0 10px 10px 0;
@@ -76,26 +81,21 @@
     border: 1px solid #f2f2f2;
     padding: 3.5px;
   }
-
   .option {
     display: flex;
   }
   .option p:hover {
     background-color: inherit;
   }
-
   .choix {
     background-color: chartreuse;
+    width: 70%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: space-around;
-    flex-wrap: wrap;
-    width: 80%;
+    flex-direction: column;
+    align-content: flex-start;
   }
   .filtres {
     font-size: 0.8em;
-    margin-left: 5px;
     width: 5%;
   }
   .econo,
@@ -109,10 +109,8 @@
   }
   #information h2 {
     font-size: 0.7em;
-    margin-left: 5px;
   }
   #ensemble {
-    /*Hôtels*/
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -122,6 +120,7 @@
   .titre_populaires {
     font-size: 1em;
   }
+
   #bloc2 {
     width: 93%;
     display: flex;
@@ -131,15 +130,16 @@
   .cartes_aside {
     height: 26vw;
     width: 90%;
+    object-fit: contain;
   }
   .picture_aside {
     height: 25.5vw;
     width: 28vw;
+    object-fit: cover;
   }
   .legende_aside {
-    background-color: white;
-    height: 26vw;
-    width: 67%;
+    height: 100%;
+    width: 90%;
   }
   .legende_aside h4 {
     font-size: 0.9em;
@@ -169,15 +169,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
   }
   .cartes {
     margin-bottom: 15px;
-    width: 94%;
-    height: 12%;
+    width: 90%;
+    height: 34vw;
+    object-fit: contain;
   }
   .cartes img {
-    width: 83vw;
+    width: 100%;
     height: 20vw;
+    object-fit: cover;
   }
   .legende h4 {
     font-size: 0.9em;
@@ -200,27 +203,31 @@
   }
   .titre_activities {
     font-size: 1em;
-    margin-left: 11px;
     width: 90%;
   }
   .carte_alone {
-    width: 93%;
+    width: 83%;
     margin-bottom: 15px;
+    object-fit: contain;
   }
   .carte_alone img {
-    width: 90vw;
+    width: 100%;
     height: 21vw;
-  }
-  .column_activities img {
-    width: 88.5vw;
-    height: 21vw;
+    object-fit: cover;
   }
   .carte_activities,
   .carte_activities1 {
     margin-bottom: 15px;
     width: 100%;
+    object-fit: contain;
   }
-  /*Effets annulés*/
+
+  .column_activities img {
+    width: 75.2vw;
+    height: 21vw;
+    object-fit: cover;
+  }
+
   .carte_alone,
   .carte_activities,
   .carte_activities1 {
@@ -233,7 +240,7 @@
     -webkit-transform: none;
     transform: none;
   }
-  /*Footer*/
+
   #information_legal {
     display: flex;
     flex-direction: column;

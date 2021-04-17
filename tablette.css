@@ -1,0 +1,221 @@
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .bloc_page {
+    width: 90%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .inscription {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    font-size: 1.1em;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+  }
+  .link_heberg {
+    border-bottom: 2px solid #0065fc;
+    width: 40%;
+  }
+  .link_acti {
+    border-bottom: 2px solid #f2f2f2;
+    width: 40%;
+  }
+  nav a:hover {
+    border-top: 0 solid #0065fc;
+    padding-top: 0;
+  }
+  /*Seconde phrase*/
+  #recherche h2 {
+    font-size: 0.7em;
+  }
+  #form {
+    display: none;
+  }
+  /* Filtres*/
+  .option {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtres {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .choix {
+    display: flex;
+    justify-content: center;
+  }
+  .option p:hover {
+    background-color: inherit;
+  }
+  #information h2 {
+    font-size: 0.7em;
+  }
+  #ensemble {
+    width: 95%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+  #hotels {
+    width: 90%;
+  }
+  #hotels h3 {
+    width: 100%;
+    font-size: 1em;
+  }
+  .rang1 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cartes {
+    margin-bottom: 15px;
+    width: 73.5%;
+    height: 12%;
+    object-fit: contain;
+  }
+  .cartes img {
+    width: 50vw;
+    height: 20vw;
+    object-fit: cover;
+  }
+  .legende h4 {
+    font-size: 0.9em;
+  }
+  .legende p {
+    font-size: 0.7em;
+  }
+  .fa-star {
+    font-size: 0.8em;
+  }
+  .afficher {
+    width: 90%;
+    font-size: 0.7em;
+  }
+  #bloc2 {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  .titre_populaires {
+    font-size: 1em;
+  }
+  .column_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .cartes_aside {
+    width: 73.5%;
+    height: 20.5vw;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
+  .picture_aside {
+    height: 20vw;
+    width: 20vw;
+    object-fit: cover;
+  }
+  .legende_aside h4 {
+    font-size: 1em;
+  }
+  .legende_aside p {
+    font-size: 0.9em;
+    line-height: 1em;
+  }
+  .legende_aside .fa-star {
+    font-size: 0.8em;
+    line-height: 9em;
+  }
+  .legende_aside {
+    height: auto;
+    width: 67%;
+  }
+  .titre_activities {
+    font-size: 1em;
+    text-align: center;
+    width: 90%;
+    margin: 0px;
+  }
+  #activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .carte_alone {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 72%;
+    object-fit: contain;
+  }
+  .carte_alone img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .column_activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    order: 1;
+  }
+
+  .carte_activities,
+  .carte_activities1 {
+    object-fit: contain;
+    width: 40%;
+    height: 30%;
+  }
+  .carte_activities img,
+  .carte_activities1 img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .carte_alone,
+  .carte_activities,
+  .carte_activities1 {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .carte_alone:hover,
+  .carte_activities:hover,
+  .carte_activities1:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+  #information_legal {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+  }
+  #list_two,
+  #list_three {
+    padding-top: 4px;
+  }
+
+  #hebergements h3,
+  #assistance h3 {
+    padding-top: 5px;
+  }
+}

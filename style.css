@@ -1,4 +1,5 @@
 /* css - ordinateurs */
+
 .bloc_page {
   font-family: "Raleway";
   margin: auto;
@@ -12,12 +13,17 @@ header {
 header .logo {
   width: 80%;
 }
+#rechercher {
+  display: none;
+}
 nav {
   width: 100%;
 }
-nav ul {
-  display: flex;
-  justify-content: flex-end;
+@media all and (min-width: 1025px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 nav ul li,
 .inscription {
@@ -72,7 +78,7 @@ header nav a {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-  width: 65%;
+  width: 100%;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 17px;
@@ -296,12 +302,11 @@ span .fa-star {
 }
 .legende_aside p {
   font-size: 0.6em;
-  line-height: 0em;
+  line-height: 1em;
 }
 .legende_aside .fa-star {
   font-size: 0.7em;
-  color: #0065fc;
-  line-height: 5em;
+  line-height: 4em;
 }
 
 /*Activités*/
@@ -405,7 +410,7 @@ span .fa-star {
 #assistance {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-content: space-around;
   width: 85%;
 }
@@ -435,11 +440,7 @@ ul {
 }
 .name {
   display: flex;
-  /* flex-direction: column;
-  flex-wrap: nowrap; */
-
   padding-left: 40px;
-  /* padding-right: 200px; */
   font-size: 0.8em;
 }
 #a_propos {
