@@ -130,22 +130,18 @@
   .cartes_aside {
     height: 26vw;
     width: 90%;
-    object-fit: contain;
-   
+    object-fit: contain;   
   }
-
   .picture_aside {
     height: 25.5vw;
     width: 35vw;
-    object-fit: cover;
-   
+    object-fit: cover;   
   }
-  .legende_aside {
+   /* .legende_aside {
     height: 100%;
     width: 100%;
-
-  }
-  .legende_aside h4 {
+  } */
+   .legende_aside h4 {
     font-size: 0.9em;
   }
   .legende_aside p {
@@ -155,7 +151,8 @@
   .legende_aside .fa-star {
     font-size: 0.8em;
     line-height: 6em;
-  }
+  } 
+  /* Hébergements à Marseille */
   #hotels {
     flex: 1;
     flex-grow: 1;
