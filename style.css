@@ -1,7 +1,7 @@
 /* css - ordinateurs */
 
 .bloc_page {
-  font-family: "Raleway";
+  font-family: "Raleway"; 
   margin: auto;
   width: 85%;
 }
@@ -69,7 +69,7 @@ header nav a {
   background-color: #f2f2f2;
   padding: 6.5px;
   border-radius: 20px 0px 0px 20px;
-  border: 2px solid color #f2f2f2;
+  border: 2px solid #f2f2f2;
   font-size: 8px;
 }
 
@@ -129,9 +129,7 @@ header nav a {
   padding: 8px;
   margin-right: 10px;
 }
-.text {
-  padding: 5px 50 5px 50px;
-}
+
 .econo,
 .fami,
 .roman,
@@ -201,13 +199,13 @@ header nav a {
 .cartes {
   background-color: white;
   border-radius: 15px;
-  padding: 4px;
-  width: 24%;
+  /* padding: 4px; */
+  width: 26%;
   height: 12%;
 }
 .cartes img {
   object-fit: cover;
-  width: 12.3vw;
+  width: 100%;
   height: 7vw;
   border-radius: 8px 8px 0 0;
   margin-top: 2px;
@@ -215,7 +213,7 @@ header nav a {
 
 .legende {
   background-color: white;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 .legende h4 {
   line-height: 0.1em;
@@ -226,7 +224,7 @@ header nav a {
   line-height: 0em;
 }
 .fa-star {
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: #0065fc;
   line-height: 0em;
 }
@@ -271,7 +269,9 @@ span .fa-star {
 .titre_populaires a {
   text-decoration: none;
 }
-
+.column_aside a {
+  text-decoration: none;
+}
 .cartes_aside {
   display: flex;
   flex-direction: row;
@@ -282,9 +282,8 @@ span .fa-star {
   height: 23%;
   margin: 6% 3.5% 6% 3.5%;
 }
-.cartes_aside a {
-  text-decoration: none;
-}
+
+
 .picture_aside {
   object-fit: cover;
   width: 7.5vw;
@@ -305,8 +304,8 @@ span .fa-star {
   line-height: 1em;
 }
 .legende_aside .fa-star {
-  font-size: 0.7em;
-  line-height: 4em;
+  font-size: 0.6em;
+  line-height: 3em;
 }
 
 /*Activités*/

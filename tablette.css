@@ -118,10 +118,15 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
+ 
   }
-
+  .column_aside a {
+    background-color: orange;
+    width: 100%;
+  }
+ 
   .cartes_aside {
-    width: 73.5%;
+    width: 80%;
     height: 20.5vw;
     margin-bottom: 0;
     object-fit: contain;
@@ -160,7 +165,7 @@
   }
   .carte_alone {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /*avant il était nowrap, ça rien changé*/
     margin-top: 20px;
     margin-bottom: 20px;
     width: 50%;
