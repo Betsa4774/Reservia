@@ -10,8 +10,6 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-   <!-- <script src="https://kit.fontawesome.com/b6d2dc537c.js"
-   crossorigin="anonymous"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <title>Reservia</title>
   </head>
@@ -53,36 +51,30 @@
          </div>
        </div>
         <!--filtres-->
-       <div class="option">
-          <h4 class="filtres">Filtres</h4>
-         <div class="choix">
-           <div class="econo">
-              <i class="fas fa-money-bill-wave-alt"></i>
-              <a href="#">
-               <p><b>Economique</b></p>
-              </a>
+        <div id="filtres_container">
+          <h4 class="filtres_title"> Filtres</h4>
+         <div id="filtres">
+           <div class="filtre_option_mobile">
+              <div class="filtre_option">
+                <i class="fas fa-money-bill-wave-alt"></i>
+                <p>Economique</p>
+              </div>
+                    
+              <div class="filtre_option">
+                <i class="fas fa-child"></i>
+                <p>Familial</p>
+              </div>
+            </div>            
+           <div class="filtre_option">
+              <i class="fas fa-heart"></i>
+              <p>Romantique</p>
            </div>
-           <div class="fami">
-             <i class="fas fa-child"></i>
-             <a href="#">
-               <p><b>Familial</b></p>
-             </a>
-           </div>
-           <div class="roman">
-             <i class="fas fa-heart"></i>
-             <a href="#">
-               <p><b>Romantique</b></p>
-             </a>
-           </div>
-           <div class="animaux">
-             <i class="fas fa-dog"></i>
-             <a href="#">
-               <p><b>Animaux autorisés</b></p>
-             </a>
-           </div>
-         </div>
-       </div>
-      
+            <div class="filtre_option">
+              <i class="fas fa-dog"></i>
+              <p>Animaux autorisés</p>
+            </div>
+          </div>
+        </div>            
         <!--Information additional-->
         <div id="information">
          <h2><i class="fas fa-exclamation-circle"></i>
@@ -157,7 +149,7 @@
             </div>
 
             <div class="cartes">
-              <a href="#">
+              <a hrefgit="#">
                 <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="camarotesantiguos"/>
                 <div class="legende">
                   <h4>Auberge Le Panier</h4>

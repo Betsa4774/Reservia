@@ -55,11 +55,11 @@ header nav a {
 }
 /* Présentation: text*/
 #recherche h1 {
-  /*Première phrase*/
+  /*Phrase de bienvenue*/
   font-size: 1em;
 }
 #recherche h2 {
-  /*Seconde phrase*/
+  /*Choix de ville*/
   font-size: 0.5em;
 }
 /*Barre de recherche*/
@@ -98,57 +98,42 @@ header nav a {
 }
 
 /*filtres*/
-.option {
+#filtres_container,
+#filtres {
   display: flex;
 }
-.choix {
+#filtres_container h4 {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: space-around;
-  flex-wrap: wrap;
-}
-
-.filtres {
+  margin-right: 1rem;
   font-size: 0.8em;
-  margin-right: 1em;
-  width: 2%;
 }
-
-.option p:hover {
-  background-color: #deebff;
+.filtre_option_mobile {
+  display: flex;
 }
-.fa-money-bill-wave-alt,
-.fa-child,
-.fa-heart,
-.fa-dog {
+.filtre_option {
+  display: flex;
+  box-sizing:content-box;  
+  align-items: center;
+  margin-right: 1.5rem;   
+}
+.filtre_option i {
+  background-color: #f2f2f2;
   color: #0065fc;
   font-size: 10px;
-  background-color: #f2f2f2;
   border-radius: 50%;
-  padding: 8px;
-  margin-right: 10px;
+  border: 3px solid #f2f2f2;
+  padding: 0.5rem;
 }
-
-.econo,
-.fami,
-.roman,
-.animaux {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  font-size: 0.6em;
-  border-radius: 20px 20px 20px 20px;
-  border-style: solid;
-  border-color: #f2f2f2;
-  margin: 10px;
-  padding-inline-end: 20px;
+.filtre_option p{
+  font-size: 10px;
+  font-weight: bold;
+  border: 3px solid #f2f2f2;
+  border-radius: 20px;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  margin-left: -2rem;
 }
-.econo a,
-.fami a,
-.roman a,
-.animaux a {
-  text-decoration: none;
+.filtre_option p:hover {
+ color: #0065fc ;
 }
 
 #information {
@@ -198,10 +183,11 @@ header nav a {
 }
 .cartes {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 15px; 
   /* padding: 4px; */
   width: 26%;
-  height: 12%;
+  height: 12%; 
+  padding-bottom: 10px;
 }
 .cartes img {
   object-fit: cover;
@@ -212,11 +198,10 @@ header nav a {
 }
 
 .legende {
-  background-color: white;
-  padding-left: 3%;
+  padding-left: 5%;
+  border-radius:  0 0 15px 15px;
 }
-.legende h4 {
-  line-height: 0.1em;
+.legende h4 { 
   font-size: 0.8em;
 }
 .legende p {
@@ -249,12 +234,12 @@ span .fa-star {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 2%;
+  border-radius: 2%; 
 }
 
 .titre_populaires {
   display: flex;
-  font-size: 0.7em;
+  font-size: 0.6em;
   justify-content: space-between;
   align-items: center;
   margin-left: 3%;
@@ -270,7 +255,9 @@ span .fa-star {
   text-decoration: none;
 }
 .column_aside a {
-  text-decoration: none;
+  text-decoration: none;  
+  margin-top: -25px;
+ 
 }
 .cartes_aside {
   display: flex;
@@ -282,8 +269,6 @@ span .fa-star {
   height: 23%;
   margin: 6% 3.5% 6% 3.5%;
 }
-
-
 .picture_aside {
   object-fit: cover;
   width: 7.5vw;
@@ -301,11 +286,9 @@ span .fa-star {
 }
 .legende_aside p {
   font-size: 0.6em;
-  line-height: 1em;
 }
 .legende_aside .fa-star {
   font-size: 0.6em;
-  line-height: 3em;
 }
 
 /*Activités*/

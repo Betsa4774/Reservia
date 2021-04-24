@@ -15,6 +15,8 @@
   }
   .logo {
     width: 20%;
+    padding-top: 7px;
+    padding-left: 18px;
   }
   .inscription {
     width: 90%;
@@ -27,6 +29,7 @@
   nav ul {
     display: flex;
     justify-content: space-between;
+    padding-left: 0px;
   }
   .navigation li {
     width: 70%;
@@ -80,33 +83,12 @@
     border: 1px solid #f2f2f2;
     padding: 3.5px;
   }
-  .option {
+  #filtres_container,
+  #filtres {
     display: flex;
+    flex-direction: column;    
   }
-  .option p:hover {
-    background-color: inherit;
-  }
-  .choix {
-    background-color: chartreuse;
-    width: 70%;
-    display: flex;
-    flex-direction: row; /*avant column, ajouté wrap*/
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
-  .filtres {
-    font-size: 0.8em;
-    width: 5%;
-  }
-  .econo,
-  .fami,
-  .roman,
-  .animaux {
-    background-color: seagreen;
-    width: 25%;
-    display: flex;
-    flex-wrap: nowrap;
-  }
+  
   #information h2 {
     font-size: 0.7em;
   }
@@ -137,10 +119,7 @@
     width: 35vw;
     object-fit: cover;   
   }
-   /* .legende_aside {
-    height: 100%;
-    width: 100%;
-  } */
+  
    .legende_aside h4 {
     font-size: 0.9em;
   }
@@ -149,8 +128,8 @@
     line-height: 0.5em;
   }
   .legende_aside .fa-star {
-    font-size: 0.8em;
-    line-height: 6em;
+    font-size: 0.7em;
+    line-height: 2.5em;
   } 
   /* Hébergements à Marseille */
   #hotels {
@@ -184,13 +163,13 @@
     object-fit: cover;
   }
   .legende h4 {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .legende p {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .fa-star {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .afficher {
     width: 90%;
@@ -205,6 +184,7 @@
   .titre_activities {
     font-size: 1em;
     width: 90%;
+    margin-left: 18px;
   }
   .carte_alone {
     width: 83%;
